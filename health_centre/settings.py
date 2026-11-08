@@ -64,13 +64,20 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "health_centre.wsgi.application"
 
-# Un seul fichier .sqlite3, facile à copier pour sauvegarder
+# Connexion de l'appli Django à la BD PostgreSQL
+import os
+
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": os.environ.get("DB_NAME", "health_centre"),
+        "USER": os.environ.get("DB_USER", "health_user"),
+        "PASSWORD": os.environ.get("DB_PASSWORD", ""),
+        "HOST": os.environ.get("DB_HOST", "localhost"),
+        "PORT": os.environ.get("DB_PORT", "5432"),
     }
 }
+
 
 # Obligatoire dès qu'on étend AbstractUser (avant la 1re migration)
 AUTH_USER_MODEL = "accounts.User"

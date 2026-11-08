@@ -1,0 +1,1443 @@
+[
+{
+  "model": "accounts.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$Ymd1aw2OLW28nSYUHLJjbP$kCL2tXgOeM5KtOYefb3wWhKNzyuNuFW4Y/Riry0HQdA=",
+    "last_login": "2026-10-16T15:15:39.321Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "Awa",
+    "last_name": "Kouassi",
+    "email": "admin@poste-sante.local",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-08-24T16:20:12.767Z",
+    "role": "ADMIN",
+    "telephone": "",
+    "photo": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$qM1naQJVdnWO2lk3d1NwNh$d5zAs6NyCPgi8Gf3EryXwL3HIQ+g/Eok9fOv/O5+dng=",
+    "last_login": "2026-10-29T19:16:20.412Z",
+    "is_superuser": false,
+    "username": "medecin",
+    "first_name": "Mamadou",
+    "last_name": "N'Diaye",
+    "email": "medecin@poste-sante.local",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-08-24T16:20:16.140Z",
+    "role": "MEDECIN",
+    "telephone": "",
+    "photo": "photos/medecin.png",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$1oE77FUwnXwkroW0kRNFml$eA9hfJZaK2GNZXCi5WQYiWH8y8g4WQRDklqC7gnQBCM=",
+    "last_login": "2026-10-16T15:04:18.682Z",
+    "is_superuser": false,
+    "username": "infirmier",
+    "first_name": "Fatou",
+    "last_name": "Traoré",
+    "email": "infirmier@poste-sante.local",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-08-24T16:20:18.500Z",
+    "role": "INFIRMIER",
+    "telephone": "",
+    "photo": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$5pqt8q6HRRo4JUbFsBVLAo$4kpFl9s9h+AdCKyfjnyWNPene1qC0eSu32ksgEYE4Js=",
+    "last_login": "2026-10-16T15:06:15.672Z",
+    "is_superuser": false,
+    "username": "reception",
+    "first_name": "Aminata",
+    "last_name": "Diallo",
+    "email": "reception@poste-sante.local",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-08-24T16:20:20.895Z",
+    "role": "RECEPTIONNISTE",
+    "telephone": "",
+    "photo": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$zUJDcHsrNyyhoDUs9Be74h$yQuA736MbRvGpMU2BUPfevI0lw3IyYJLdDOJthEy1jQ=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "DrFall@08",
+    "first_name": "Ibrahim",
+    "last_name": "Fall",
+    "email": "Fall@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-08-24T16:59:54.793Z",
+    "role": "MEDECIN",
+    "telephone": "787379495",
+    "photo": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 1,
+  "fields": {
+    "utilisateur": [
+      "reception"
+    ],
+    "action": "patients:creer",
+    "description": "Commande de démonstration déjà sortie du journal quotidien",
+    "methode": "POST",
+    "chemin": "/patients/nouveau/",
+    "adresse_ip": null,
+    "created_at": "2026-08-23T10:52:20.940Z",
+    "efface_le": "2026-08-24T11:52:20.940Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 2,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-08-24T16:54:29.294Z",
+    "efface_le": "2026-09-14T11:33:22.753Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 3,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "accounts:profil",
+    "description": "POST /comptes/profil/",
+    "methode": "POST",
+    "chemin": "/comptes/profil/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-08-24T16:55:22.775Z",
+    "efface_le": "2026-09-14T11:33:22.753Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 4,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "DECONNEXION",
+    "description": "Déconnexion",
+    "methode": "POST",
+    "chemin": "/comptes/deconnexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-08-24T16:55:34.575Z",
+    "efface_le": "2026-09-14T11:33:22.753Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 5,
+  "fields": {
+    "utilisateur": [
+      "admin"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-08-24T16:55:53.796Z",
+    "efface_le": "2026-09-14T11:33:22.753Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 6,
+  "fields": {
+    "utilisateur": [
+      "admin"
+    ],
+    "action": "accounts:utilisateur_creer",
+    "description": "POST /comptes/utilisateurs/nouveau/",
+    "methode": "POST",
+    "chemin": "/comptes/utilisateurs/nouveau/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-08-24T16:59:11.131Z",
+    "efface_le": "2026-09-14T11:33:22.753Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 7,
+  "fields": {
+    "utilisateur": [
+      "admin"
+    ],
+    "action": "accounts:utilisateur_creer",
+    "description": "POST /comptes/utilisateurs/nouveau/",
+    "methode": "POST",
+    "chemin": "/comptes/utilisateurs/nouveau/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-08-24T16:59:55.886Z",
+    "efface_le": "2026-09-14T11:33:22.753Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 8,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-09-14T11:34:24.962Z",
+    "efface_le": "2026-09-21T23:06:02.104Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 9,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "DECONNEXION",
+    "description": "Déconnexion",
+    "methode": "POST",
+    "chemin": "/comptes/deconnexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-09-14T11:35:09.352Z",
+    "efface_le": "2026-09-21T23:06:02.104Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 10,
+  "fields": {
+    "utilisateur": [
+      "admin"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-09-21T23:14:36.561Z",
+    "efface_le": "2026-09-23T12:34:53.142Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 11,
+  "fields": {
+    "utilisateur": [
+      "admin"
+    ],
+    "action": "DECONNEXION",
+    "description": "Déconnexion",
+    "methode": "POST",
+    "chemin": "/comptes/deconnexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-09-21T23:15:50.933Z",
+    "efface_le": "2026-09-23T12:34:53.142Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 12,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-09-23T12:36:26.117Z",
+    "efface_le": "2026-09-29T22:23:18.904Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 13,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "DECONNEXION",
+    "description": "Déconnexion",
+    "methode": "POST",
+    "chemin": "/comptes/deconnexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-09-23T12:37:49.399Z",
+    "efface_le": "2026-09-29T22:23:18.904Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 14,
+  "fields": {
+    "utilisateur": [
+      "infirmier"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-09-23T12:38:21.785Z",
+    "efface_le": "2026-09-29T22:23:18.904Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 15,
+  "fields": {
+    "utilisateur": [
+      "infirmier"
+    ],
+    "action": "DECONNEXION",
+    "description": "Déconnexion",
+    "methode": "POST",
+    "chemin": "/comptes/deconnexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-09-23T12:39:07.503Z",
+    "efface_le": "2026-09-29T22:23:18.904Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 16,
+  "fields": {
+    "utilisateur": [
+      "admin"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-09-23T12:39:26.577Z",
+    "efface_le": "2026-09-29T22:23:18.904Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 17,
+  "fields": {
+    "utilisateur": [
+      "admin"
+    ],
+    "action": "DECONNEXION",
+    "description": "Déconnexion",
+    "methode": "POST",
+    "chemin": "/comptes/deconnexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-09-23T12:41:04.351Z",
+    "efface_le": "2026-09-29T22:23:18.904Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 18,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-09-29T23:37:26.744Z",
+    "efface_le": "2026-10-14T00:07:30.983Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 19,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "consultations:ordonnance",
+    "description": "POST /consultations/5/ordonnance/",
+    "methode": "POST",
+    "chemin": "/consultations/5/ordonnance/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-09-29T23:38:42.778Z",
+    "efface_le": "2026-10-14T00:07:30.983Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 20,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "consultations:rdv_creer_patient",
+    "description": "POST /consultations/patients/1/rendez-vous/nouveau/",
+    "methode": "POST",
+    "chemin": "/consultations/patients/1/rendez-vous/nouveau/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-09-29T23:48:47.929Z",
+    "efface_le": "2026-10-14T00:07:30.983Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 21,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "DECONNEXION",
+    "description": "Déconnexion",
+    "methode": "POST",
+    "chemin": "/comptes/deconnexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-09-29T23:55:49.723Z",
+    "efface_le": "2026-10-14T00:07:30.983Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 22,
+  "fields": {
+    "utilisateur": [
+      "admin"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "192.168.1.7",
+    "created_at": "2026-10-14T00:27:45.103Z",
+    "efface_le": "2026-10-16T14:54:25.966Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 23,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-16T14:55:07.010Z",
+    "efface_le": "2026-10-28T12:23:33.826Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 24,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "DECONNEXION",
+    "description": "Déconnexion",
+    "methode": "POST",
+    "chemin": "/comptes/deconnexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-16T14:55:38.094Z",
+    "efface_le": "2026-10-28T12:23:33.826Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 25,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-16T15:00:06.005Z",
+    "efface_le": "2026-10-28T12:23:33.826Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 26,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "DECONNEXION",
+    "description": "Déconnexion",
+    "methode": "POST",
+    "chemin": "/comptes/deconnexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-16T15:01:49.088Z",
+    "efface_le": "2026-10-28T12:23:33.826Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 27,
+  "fields": {
+    "utilisateur": [
+      "admin"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-16T15:02:11.834Z",
+    "efface_le": "2026-10-28T12:23:33.826Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 28,
+  "fields": {
+    "utilisateur": [
+      "admin"
+    ],
+    "action": "DECONNEXION",
+    "description": "Déconnexion",
+    "methode": "POST",
+    "chemin": "/comptes/deconnexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-16T15:03:58.663Z",
+    "efface_le": "2026-10-28T12:23:33.826Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 29,
+  "fields": {
+    "utilisateur": [
+      "infirmier"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-16T15:04:18.939Z",
+    "efface_le": "2026-10-28T12:23:33.826Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 30,
+  "fields": {
+    "utilisateur": [
+      "infirmier"
+    ],
+    "action": "DECONNEXION",
+    "description": "Déconnexion",
+    "methode": "POST",
+    "chemin": "/comptes/deconnexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-16T15:05:52.636Z",
+    "efface_le": "2026-10-28T12:23:33.826Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 31,
+  "fields": {
+    "utilisateur": [
+      "reception"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-16T15:06:15.851Z",
+    "efface_le": "2026-10-28T12:23:33.826Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 32,
+  "fields": {
+    "utilisateur": [
+      "reception"
+    ],
+    "action": "DECONNEXION",
+    "description": "Déconnexion",
+    "methode": "POST",
+    "chemin": "/comptes/deconnexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-16T15:10:56.533Z",
+    "efface_le": "2026-10-28T12:23:33.826Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 33,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-16T15:11:03.444Z",
+    "efface_le": "2026-10-28T12:23:33.826Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 34,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "DECONNEXION",
+    "description": "Déconnexion",
+    "methode": "POST",
+    "chemin": "/comptes/deconnexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-16T15:15:20.280Z",
+    "efface_le": "2026-10-28T12:23:33.826Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 35,
+  "fields": {
+    "utilisateur": [
+      "admin"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-16T15:15:40.941Z",
+    "efface_le": "2026-10-28T12:23:33.826Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 36,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-28T12:24:11.667Z",
+    "efface_le": "2026-10-29T18:44:52.812Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 37,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "consultations:ordonnance",
+    "description": "POST /consultations/1/ordonnance/",
+    "methode": "POST",
+    "chemin": "/consultations/1/ordonnance/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-28T12:24:51.712Z",
+    "efface_le": "2026-10-29T18:44:52.812Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 38,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "DECONNEXION",
+    "description": "Déconnexion",
+    "methode": "POST",
+    "chemin": "/comptes/deconnexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-28T12:25:43.806Z",
+    "efface_le": "2026-10-29T18:44:52.812Z"
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 39,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-29T18:53:13.120Z",
+    "efface_le": null
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 40,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "DECONNEXION",
+    "description": "Déconnexion",
+    "methode": "POST",
+    "chemin": "/comptes/deconnexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-29T18:58:39.721Z",
+    "efface_le": null
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 41,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-29T18:59:01.789Z",
+    "efface_le": null
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 42,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "DECONNEXION",
+    "description": "Déconnexion",
+    "methode": "POST",
+    "chemin": "/comptes/deconnexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-29T19:12:25.627Z",
+    "efface_le": null
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 43,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-29T19:12:59.602Z",
+    "efface_le": null
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 44,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "DECONNEXION",
+    "description": "Déconnexion",
+    "methode": "POST",
+    "chemin": "/comptes/deconnexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-29T19:13:40.024Z",
+    "efface_le": null
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 45,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-29T19:13:49.207Z",
+    "efface_le": null
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 46,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "DECONNEXION",
+    "description": "Déconnexion",
+    "methode": "POST",
+    "chemin": "/comptes/deconnexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-29T19:14:06.429Z",
+    "efface_le": null
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 47,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-29T19:14:10.617Z",
+    "efface_le": null
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 48,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "DECONNEXION",
+    "description": "Déconnexion",
+    "methode": "POST",
+    "chemin": "/comptes/deconnexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-29T19:14:27.728Z",
+    "efface_le": null
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 49,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-29T19:14:32.249Z",
+    "efface_le": null
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 50,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "DECONNEXION",
+    "description": "Déconnexion",
+    "methode": "POST",
+    "chemin": "/comptes/deconnexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-29T19:16:11.106Z",
+    "efface_le": null
+  }
+},
+{
+  "model": "accounts.auditlog",
+  "pk": 51,
+  "fields": {
+    "utilisateur": [
+      "medecin"
+    ],
+    "action": "accounts:login",
+    "description": "POST /comptes/connexion/",
+    "methode": "POST",
+    "chemin": "/comptes/connexion/",
+    "adresse_ip": "127.0.0.1",
+    "created_at": "2026-10-29T19:16:20.528Z",
+    "efface_le": null
+  }
+},
+{
+  "model": "patients.patient",
+  "pk": 1,
+  "fields": {
+    "numero_dossier": "PAT-2026-0001",
+    "nom": "Bamba",
+    "prenom": "Issa",
+    "date_naissance": "1988-03-12",
+    "genre": "M",
+    "groupe_sanguin": "O+",
+    "telephone": "0701020304",
+    "adresse": "Quartier Commerce",
+    "antecedent_medicaux": "HTA",
+    "antecedent_chirurgicaux": "",
+    "allergies": "Pénicilline",
+    "created_at": "2026-08-24T16:20:24.556Z",
+    "updated_at": "2026-08-24T16:20:24.556Z",
+    "created_by": [
+      "reception"
+    ]
+  }
+},
+{
+  "model": "patients.patient",
+  "pk": 2,
+  "fields": {
+    "numero_dossier": "PAT-2026-0002",
+    "nom": "Koné",
+    "prenom": "Awa",
+    "date_naissance": "1995-07-21",
+    "genre": "F",
+    "groupe_sanguin": "A+",
+    "telephone": "0702030405",
+    "adresse": "Cité des Infirmiers",
+    "antecedent_medicaux": "Asthme",
+    "antecedent_chirurgicaux": "Appendicectomie 2014",
+    "allergies": "",
+    "created_at": "2026-08-24T16:20:24.819Z",
+    "updated_at": "2026-08-24T16:20:24.819Z",
+    "created_by": [
+      "reception"
+    ]
+  }
+},
+{
+  "model": "patients.patient",
+  "pk": 3,
+  "fields": {
+    "numero_dossier": "PAT-2026-0003",
+    "nom": "Ouattara",
+    "prenom": "Yao",
+    "date_naissance": "2012-01-05",
+    "genre": "M",
+    "groupe_sanguin": "B+",
+    "telephone": "0703040506",
+    "adresse": "Village Nord",
+    "antecedent_medicaux": "",
+    "antecedent_chirurgicaux": "",
+    "allergies": "",
+    "created_at": "2026-08-24T16:20:25.037Z",
+    "updated_at": "2026-08-24T16:20:25.037Z",
+    "created_by": [
+      "reception"
+    ]
+  }
+},
+{
+  "model": "patients.patient",
+  "pk": 4,
+  "fields": {
+    "numero_dossier": "PAT-2026-0004",
+    "nom": "Soro",
+    "prenom": "Mariam",
+    "date_naissance": "1964-11-30",
+    "genre": "F",
+    "groupe_sanguin": "O-",
+    "telephone": "0704050607",
+    "adresse": "Derrière la mosquée",
+    "antecedent_medicaux": "Diabète type 2",
+    "antecedent_chirurgicaux": "Césarienne 1998",
+    "allergies": "AINS",
+    "created_at": "2026-08-24T16:20:25.555Z",
+    "updated_at": "2026-08-24T16:20:25.555Z",
+    "created_by": [
+      "reception"
+    ]
+  }
+},
+{
+  "model": "patients.patient",
+  "pk": 5,
+  "fields": {
+    "numero_dossier": "PAT-2026-0005",
+    "nom": "Touré",
+    "prenom": "Abdoulaye",
+    "date_naissance": "2001-09-18",
+    "genre": "M",
+    "groupe_sanguin": "AB+",
+    "telephone": "0705060708",
+    "adresse": "Campement",
+    "antecedent_medicaux": "Paludisme à répétition",
+    "antecedent_chirurgicaux": "",
+    "allergies": "",
+    "created_at": "2026-08-24T16:20:25.705Z",
+    "updated_at": "2026-08-24T16:20:25.705Z",
+    "created_by": [
+      "reception"
+    ]
+  }
+},
+{
+  "model": "patients.patient",
+  "pk": 6,
+  "fields": {
+    "numero_dossier": "PAT-2026-0006",
+    "nom": "Cissé",
+    "prenom": "Adjoua",
+    "date_naissance": "1978-04-02",
+    "genre": "F",
+    "groupe_sanguin": "A-",
+    "telephone": "0706070809",
+    "adresse": "Route de la gare",
+    "antecedent_medicaux": "",
+    "antecedent_chirurgicaux": "Hernie inguinale 2020",
+    "allergies": "",
+    "created_at": "2026-08-24T16:20:25.902Z",
+    "updated_at": "2026-08-24T16:20:25.902Z",
+    "created_by": [
+      "reception"
+    ]
+  }
+},
+{
+  "model": "patients.patient",
+  "pk": 7,
+  "fields": {
+    "numero_dossier": "PAT-2026-0007",
+    "nom": "Yao",
+    "prenom": "Koffi",
+    "date_naissance": "1955-06-14",
+    "genre": "M",
+    "groupe_sanguin": "B-",
+    "telephone": "0707080910",
+    "adresse": "Ancien marché",
+    "antecedent_medicaux": "BPCO, HTA",
+    "antecedent_chirurgicaux": "",
+    "allergies": "Iode",
+    "created_at": "2026-08-24T16:20:26.078Z",
+    "updated_at": "2026-08-24T16:20:26.078Z",
+    "created_by": [
+      "reception"
+    ]
+  }
+},
+{
+  "model": "patients.patient",
+  "pk": 8,
+  "fields": {
+    "numero_dossier": "PAT-2026-0008",
+    "nom": "Fofana",
+    "prenom": "Nafissatou",
+    "date_naissance": "2018-12-09",
+    "genre": "F",
+    "groupe_sanguin": "O+",
+    "telephone": "0708091011",
+    "adresse": "Cité scolaire",
+    "antecedent_medicaux": "",
+    "antecedent_chirurgicaux": "",
+    "allergies": "",
+    "created_at": "2026-08-24T16:20:26.298Z",
+    "updated_at": "2026-08-24T16:20:26.298Z",
+    "created_by": [
+      "reception"
+    ]
+  }
+},
+{
+  "model": "patients.patient",
+  "pk": 9,
+  "fields": {
+    "numero_dossier": "PAT-2026-0009",
+    "nom": "DIOP",
+    "prenom": "Pape",
+    "date_naissance": "1992-06-26",
+    "genre": "M",
+    "groupe_sanguin": "O+",
+    "telephone": "787666453",
+    "adresse": "Ouakam",
+    "antecedent_medicaux": "",
+    "antecedent_chirurgicaux": "",
+    "allergies": "",
+    "created_at": "2026-08-24T16:27:07.835Z",
+    "updated_at": "2026-08-24T16:27:07.835Z",
+    "created_by": [
+      "reception"
+    ]
+  }
+},
+{
+  "model": "consultations.constante",
+  "pk": 1,
+  "fields": {
+    "patient": 1,
+    "date": "2026-08-24T16:20:26.504Z",
+    "tension_arterielle": "128/82",
+    "temperature": "37.2",
+    "poids": "78.0",
+    "taille": "172.0",
+    "frequence_cardiaque": 76,
+    "pris_par": [
+      "infirmier"
+    ],
+    "notes": "Repos 5 min"
+  }
+},
+{
+  "model": "consultations.constante",
+  "pk": 2,
+  "fields": {
+    "patient": 1,
+    "date": "2026-08-24T15:20:26.504Z",
+    "tension_arterielle": "110/70",
+    "temperature": "36.8",
+    "poids": "62.5",
+    "taille": "165.0",
+    "frequence_cardiaque": 72,
+    "pris_par": [
+      "infirmier"
+    ],
+    "notes": ""
+  }
+},
+{
+  "model": "consultations.constante",
+  "pk": 3,
+  "fields": {
+    "patient": 2,
+    "date": "2026-08-24T14:20:26.504Z",
+    "tension_arterielle": "145/90",
+    "temperature": "38.4",
+    "poids": "54.0",
+    "taille": "148.0",
+    "frequence_cardiaque": 98,
+    "pris_par": [
+      "infirmier"
+    ],
+    "notes": "Fièvre"
+  }
+},
+{
+  "model": "consultations.constante",
+  "pk": 4,
+  "fields": {
+    "patient": 3,
+    "date": "2026-08-24T13:20:26.504Z",
+    "tension_arterielle": "100/65",
+    "temperature": "37.0",
+    "poids": "28.0",
+    "taille": "132.0",
+    "frequence_cardiaque": 88,
+    "pris_par": [
+      "infirmier"
+    ],
+    "notes": "Enfant"
+  }
+},
+{
+  "model": "consultations.constante",
+  "pk": 5,
+  "fields": {
+    "patient": 4,
+    "date": "2026-08-24T12:20:26.504Z",
+    "tension_arterielle": "150/95",
+    "temperature": "36.6",
+    "poids": "81.0",
+    "taille": "158.0",
+    "frequence_cardiaque": 80,
+    "pris_par": [
+      "infirmier"
+    ],
+    "notes": "HTA connue"
+  }
+},
+{
+  "model": "consultations.constante",
+  "pk": 6,
+  "fields": {
+    "patient": 5,
+    "date": "2026-08-24T11:20:26.504Z",
+    "tension_arterielle": "118/76",
+    "temperature": "39.1",
+    "poids": "68.0",
+    "taille": "175.0",
+    "frequence_cardiaque": 102,
+    "pris_par": [
+      "infirmier"
+    ],
+    "notes": "Accès fébrile"
+  }
+},
+{
+  "model": "consultations.consultation",
+  "pk": 1,
+  "fields": {
+    "patient": 1,
+    "medecin": [
+      "medecin"
+    ],
+    "constante": 1,
+    "motif": "Céphalées et vertiges",
+    "symptomes": "Céphalées pulsatiles, phosphènes",
+    "diagnostic": "HTA non contrôlée",
+    "conduite_a_tenir": "Amlodipine, régime hyposodé, contrôle J7",
+    "date_consultation": "2026-08-24T15:50:26.504Z"
+  }
+},
+{
+  "model": "consultations.consultation",
+  "pk": 2,
+  "fields": {
+    "patient": 2,
+    "medecin": [
+      "medecin"
+    ],
+    "constante": 2,
+    "motif": "Toux et dyspnée",
+    "symptomes": "Toux sèche nocturne, sibilants",
+    "diagnostic": "Crise d'asthme légère",
+    "conduite_a_tenir": "Ventoline, éviter allergènes",
+    "date_consultation": "2026-08-24T15:20:26.504Z"
+  }
+},
+{
+  "model": "consultations.consultation",
+  "pk": 3,
+  "fields": {
+    "patient": 5,
+    "medecin": [
+      "medecin"
+    ],
+    "constante": 6,
+    "motif": "Fièvre et frissons",
+    "symptomes": "Fièvre 39, céphalées, nausées",
+    "diagnostic": "Accès palustre simple (suspicion)",
+    "conduite_a_tenir": "TDR + CTA 3 jours, paracétamol",
+    "date_consultation": "2026-08-24T13:50:26.504Z"
+  }
+},
+{
+  "model": "consultations.consultation",
+  "pk": 4,
+  "fields": {
+    "patient": 4,
+    "medecin": [
+      "medecin"
+    ],
+    "constante": 5,
+    "motif": "Suivi diabète",
+    "symptomes": "Polyurie, soif",
+    "diagnostic": "Diabète type 2 déséquilibré",
+    "conduite_a_tenir": "Renforcer règles hygiéno-diététiques, bilan",
+    "date_consultation": "2026-08-24T14:20:26.504Z"
+  }
+},
+{
+  "model": "consultations.consultation",
+  "pk": 5,
+  "fields": {
+    "patient": 1,
+    "medecin": [
+      "medecin"
+    ],
+    "constante": 1,
+    "motif": "Maux de ventre",
+    "symptomes": "",
+    "diagnostic": "Gastro",
+    "conduite_a_tenir": "",
+    "date_consultation": "2026-08-24T16:40:46.160Z"
+  }
+},
+{
+  "model": "consultations.ordonnance",
+  "pk": 1,
+  "fields": {
+    "consultation": 1,
+    "date_creation": "2026-08-24T16:20:28.952Z",
+    "mention": "À renouveler uniquement sur avis médical."
+  }
+},
+{
+  "model": "consultations.ordonnance",
+  "pk": 2,
+  "fields": {
+    "consultation": 2,
+    "date_creation": "2026-08-24T16:20:29.573Z",
+    "mention": "À renouveler uniquement sur avis médical."
+  }
+},
+{
+  "model": "consultations.ordonnance",
+  "pk": 3,
+  "fields": {
+    "consultation": 3,
+    "date_creation": "2026-08-24T16:20:30.014Z",
+    "mention": "À renouveler uniquement sur avis médical."
+  }
+},
+{
+  "model": "consultations.ordonnance",
+  "pk": 4,
+  "fields": {
+    "consultation": 4,
+    "date_creation": "2026-08-24T16:20:30.731Z",
+    "mention": "À renouveler uniquement sur avis médical."
+  }
+},
+{
+  "model": "consultations.ordonnance",
+  "pk": 5,
+  "fields": {
+    "consultation": 5,
+    "date_creation": "2026-08-24T16:40:46.325Z",
+    "mention": "À renouveler uniquement sur avis médical."
+  }
+},
+{
+  "model": "consultations.rendezvous",
+  "pk": 1,
+  "fields": {
+    "patient": 1,
+    "medecin": [
+      "medecin"
+    ],
+    "date_heure": "2026-08-25T18:52:20.559Z",
+    "motif": "Contrôle tension artérielle",
+    "notes": "",
+    "statut": "PLANIFIE",
+    "created_at": "2026-08-24T16:52:20.564Z"
+  }
+},
+{
+  "model": "consultations.rendezvous",
+  "pk": 2,
+  "fields": {
+    "patient": 8,
+    "medecin": [
+      "medecin"
+    ],
+    "date_heure": "2026-08-26T19:52:20.559Z",
+    "motif": "Suivi diabète",
+    "notes": "",
+    "statut": "PLANIFIE",
+    "created_at": "2026-08-24T16:52:20.672Z"
+  }
+},
+{
+  "model": "consultations.ligneordonnance",
+  "pk": 1,
+  "fields": {
+    "ordonnance": 1,
+    "medicament_nom": "Amlodipine 5 mg",
+    "posologie": "1 comprimé le matin",
+    "duree_traitement": "30 jours"
+  }
+},
+{
+  "model": "consultations.ligneordonnance",
+  "pk": 2,
+  "fields": {
+    "ordonnance": 1,
+    "medicament_nom": "Paracétamol 1 g",
+    "posologie": "1 comprimé si douleur, max 3/j",
+    "duree_traitement": "5 jours"
+  }
+},
+{
+  "model": "consultations.ligneordonnance",
+  "pk": 3,
+  "fields": {
+    "ordonnance": 2,
+    "medicament_nom": "Salbutamol 100 µg",
+    "posologie": "2 bouffées si crise",
+    "duree_traitement": "À la demande"
+  }
+},
+{
+  "model": "consultations.ligneordonnance",
+  "pk": 4,
+  "fields": {
+    "ordonnance": 3,
+    "medicament_nom": "Artéméther / Luméfantrine",
+    "posologie": "Selon poids, matin et soir",
+    "duree_traitement": "3 jours"
+  }
+},
+{
+  "model": "consultations.ligneordonnance",
+  "pk": 5,
+  "fields": {
+    "ordonnance": 3,
+    "medicament_nom": "Paracétamol 500 mg",
+    "posologie": "1 comprimé x 3 / jour",
+    "duree_traitement": "3 jours"
+  }
+},
+{
+  "model": "consultations.ligneordonnance",
+  "pk": 6,
+  "fields": {
+    "ordonnance": 4,
+    "medicament_nom": "Metformine 500 mg",
+    "posologie": "1 comprimé matin et soir pendant le repas",
+    "duree_traitement": "30 jours"
+  }
+},
+{
+  "model": "consultations.ligneordonnance",
+  "pk": 7,
+  "fields": {
+    "ordonnance": 5,
+    "medicament_nom": "Ibuprofène",
+    "posologie": "3/Jours",
+    "duree_traitement": "3jours"
+  }
+}
+]
