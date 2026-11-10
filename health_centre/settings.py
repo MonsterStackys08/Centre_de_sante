@@ -1,4 +1,9 @@
-# Réglages du projet. Pour un poste local on reste simple : SQLite + DEBUG.
+# Reglages pour le chargement automatique
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+# Réglages du projet. Pour un poste local on reste simple : Postgres
 from pathlib import Path
 
 from django.contrib.messages import constants as message_constants
@@ -72,7 +77,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": os.environ.get("DB_NAME", "health_centre"),
         "USER": os.environ.get("DB_USER", "health_user"),
-        "PASSWORD": os.environ.get("DB_PASSWORD", ""),
+        "PASSWORD": os.environ.get("DB_PASSWORD", "Magnifique1@"),
         "HOST": os.environ.get("DB_HOST", "localhost"),
         "PORT": os.environ.get("DB_PORT", "5433"),
     }
